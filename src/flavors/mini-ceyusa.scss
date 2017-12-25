@@ -91,11 +91,65 @@ $include-drawer:           false;                  // [Hidden flag] Should the d
 
 $article-mobile-breakpoint:   767px !default;     // Breakpoint for table mobile view.
 $article-element-back-color:  white;              // Background color for <article>
+
+$form-back-color:        $article-element-back-color;                 // Background color for forms
+$form-fore-color:        $fore-color;             // Text color for forms
+$form-border-style:      0;                       // Border style for forms
+$form-border-radius:     0;                       // Border radius for forms
+$form-margin:            0.5rem;                  // Margin for forms
+$form-padding:           0.75rem 0.5rem 1.125rem; // Padding for forms
+$form-box-shadow:        none;                    // Box shadow for forms
+$fieldset-back-color:    $form-back-color;        // Background color for fieldset
+$fieldset-border-style:  $_1px solid #d0d0d0;     // Border style for fieldset
+$fieldset-border-radius: 2*$_1px;                 // Border radius for fieldset
+$fieldset-margin:        0.125rem;                // Margin for fieldset
+$fieldset-padding:       0.5rem;                  // Padding for fieldset
+$legend-font-weight:     $bold-font-weight;       // Font weight for legend
+$legend-font-size:       0.875rem;                // Font size for legend
+$legend-fore-color:      $form-fore-color;        // Text color for legend
+$legend-padding:         0.125rem 0.25rem;        // Padding for legend
+$label-padding:          0.25rem 0.5rem;          // Padding for label
+$include-fluid-input-group:    false;              // Should fluid input grooups be included? (`true`/`false`) [1]
+$input-back-color:      #fafafa;                  // Background for input
+$input-fore-color:      $fore-color;              // Text color for input
+$input-border-style:    $_1px solid #c9c9c9;      // Border style for input
+$input-border-radius:   2*$_1px;                  // Border radius for input
+$input-margin:          0.25rem;                  // Margin for input
+$input-padding:         0.5rem 0.75rem;           // Padding for input
+$input-focus-border-color:    #0288d1;            // Border color for focused input
+$input-disabled-opacity:      0.75;               // Opacity for disabled input
+$input-invalid-border-color:  #d32f2f;            // Border color for invalid input
+$input-readonly-back-color:   #e5e5e5;            // Background color for readonly input
+$input-readonly-border-color: #c9c9c9;            // Border color for readonly input
+$input-placeholder-fore-color:#616161;            // Text color for input placeholder
+$button-back-color:      #dcdcdc;                 // Back color for button elements
+$button-back-opacity:    0.75;                    // Background opacity for button elements
+$button-fore-color:      $fore-color;             // Text color for button elements
+$button-disabled-opacity: 0.75;                   // Disabled button elements opacity
+$button-border-radius:   2*$_1px;                 // Border radius for button elements
+$button-padding:         0.5rem 0.75rem;          // Padding for button elements
+$button-margin:          0.5rem;                  // Margin for button elements
+$button-hover-back-opacity: 1;                    // Background opacity for button elements on hover or focus
+$checkbox-size:                  1rem;            // Size for checkbox/radio [3]
+$checkbox-bottom-spacing:        0.375rem;        // Bottom spacing for checkbox/radio
+$checkbox-border-thickness:      $_1px;           // Border thickness for checkbox/radio
+$checkbox-border-color:          #bdbdbd;         // Border color for checkbox/radio
+$checkbox-border-radius:    $input-border-radius; // Border radius for checkbox/radio
+$checkbox-back-color:          $input-back-color; // Background clor for checkbox/radio
+$checkbox-fore-color:          $input-fore-color; // Text/mark color for checkbox/radio
+$checkbox-box-shadow:           none;             // Box shadow for checkbox/radio
+$checkbox-focus-border-color: $input-focus-border-color;// Border color for checkbox/radio on focus
+$checkbox-disabled-opacity:   $input-disabled-opacity;// Opacity for disabled checkbox/radio
+$include-switch:                false;            // Should switch components be included? (`true`/`false`)
+$include-button-group:           false;           // [Hidden flag] Should button groups be enabled? (`true`/`false`)
+$apply-select-fix:               false;           // [Hidden flag] Should the styles that fix <select> styling be applied? (`true`/`false`)
+
 $banner-back-color:           #ffaa00;            // Background color for <header>#banner
 $banner-fore-color:           #000000;            // Text color for <header>#banner
 
 @import '../mini/core';
 @import '../mini/navigation';
+@import '../mini/input_control';
 @import '../extra/html4css1';
 
 article {
