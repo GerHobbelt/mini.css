@@ -6,7 +6,7 @@ $base-line-height:      1.5;                      // Default line height for all
 $base-font-size:        1rem;                     // Default font sizing for all elements
 $body-margin:           0;                        // Margin for the body
 $fore-color:            #212121;                  // Text and general foreground color
-$back-color:            #f8f8f8;                  // Body background color
+$back-color:            #ddd;                     // Body background color
 $heading-line-height:   1.2em;                    // Line height for all headings
 $heading-margin:        0.75rem 0.5rem;           // Margin for all headings
 $heading-font-weight:   500;                      // Font weight for all headings
@@ -66,5 +66,21 @@ $link-visited-fore-color:  #01579b;               // Text color for visited <a>
 $figcaption-font-size:     0.8125rem;             // Font size of <figcaption> elements
 $figcaption-fore-color:    #424242;               // Text color for <figcaption> elements
 
+$article-mobile-breakpoint:   767px !default;     // Breakpoint for table mobile view.
+$article-element-back-color:  white;              // Background color for <article>
+
 @import '../mini/core';
 @import '../extra/html4css1';
+
+article {
+    margin: 0 10% 0 10%;
+    padding: 0.5em 2em 0.5em 2em;
+    background: $article-element-back-color;
+}
+
+@media screen and (max-width: #{$article-mobile-breakpoint}) {
+    article {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+    }
+}
