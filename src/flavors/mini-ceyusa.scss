@@ -136,3 +136,16 @@ article {
 	font-size: $small-font-size;
     }
 }
+
+aside {
+    float: left;
+    ul {
+	list-style: none;
+    }
+}
+
+@media screen and (max-width: #{$article-mobile-breakpoint}) {
+    aside {
+	display: none;
+    }
+}
