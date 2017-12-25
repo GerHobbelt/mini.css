@@ -91,6 +91,8 @@ $include-drawer:           false;                  // [Hidden flag] Should the d
 
 $article-mobile-breakpoint:   767px !default;     // Breakpoint for table mobile view.
 $article-element-back-color:  white;              // Background color for <article>
+$banner-back-color:           #ffaa00;            // Background color for <header>#banner
+$banner-fore-color:           #000000;            // Text color for <header>#banner
 
 @import '../mini/core';
 @import '../mini/navigation';
@@ -106,6 +108,25 @@ article {
     article {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+    }
+}
+
+#banner {
+    background: $banner-back-color;
+    border-radius: 5px;
+    .logo {
+	color: $banner-fore-color;
+	font-weight: $bold-font-weight;
+    }
+    .button {
+	margin: 0 1rem 0;
+	color: $banner-fore-color;
+	font-weight: $bold-font-weight;
+        background: $banner-back-color;
+	vertical-align: initial;
+	&:hover, &:focus, &:active {
+            background: $banner-back-color;
+	}
     }
 }
 
