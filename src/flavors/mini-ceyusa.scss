@@ -1,0 +1,69 @@
+$base-root-font-size:   16px;                     // Root font sizing for all elements [1]
+$_1px:  (1px/$base-root-font-size) * 1rem;        // Calculated rem value of 1px [1]
+$base-font-family:                                // Default font stack for all elements:
+  '-apple-system, BlinkMacSystemFont,\"Segoe UI\",\"Roboto\", \"Droid Sans\",\"Helvetica Neue\", Helvetica, Arial, sans-serif';
+$base-line-height:      1.5;                      // Default line height for all elements.
+$base-font-size:        1rem;                     // Default font sizing for all elements
+$body-margin:           0;                        // Margin for the body
+$fore-color:            #212121;                  // Text and general foreground color
+$back-color:            #f8f8f8;                  // Body background color
+$heading-line-height:   1.2em;                    // Line height for all headings
+$heading-margin:        0.75rem 0.5rem;           // Margin for all headings
+$heading-font-weight:   500;                      // Font weight for all headings
+$heading-smalltext-fore-color:  #424242;          // <small> color in headings
+$h1-font-size:          2rem;                     // Font size of h1
+$h2-font-size:          1.6875rem;                // Font size for h2
+$h3-font-size:          1.4375rem;                // Font size for h3
+$h4-font-size:          1.1875rem;                // Font size for h4
+$h5-font-size:          1rem;                     // Font size for h5
+$h6-font-size:          0.8125rem;                // Font size for h6
+$paragraph-margin:       0.5rem;                  // Margin for <p> elements
+$list-margin:            0.5rem;                  // Margin for <ol> and <ul> elements
+$list-left-padding:      1rem;                    // Left padding for <ol> and <ul> elements
+$bold-font-weight:       700;                     // Font weight for <b> and <strong>
+$horizontal-rule-line-height:  1.25em;            // <hr> line height
+$horizontal-rule-margin:       0.5rem;            // <hr> margin
+$horizontal-rule-border-style: $_1px solid #8c8c8c;// Border style for horizontal rules (used in the <hr> element's border-top)
+$blockquote-back-color:      #eeeeee;             // Background color for <blockquote>
+$blockquote-fore-color:      $fore-color;         // Text color for <blockquote>
+$blockquote-margin:          0.5rem;              // Margin for <blockquote>
+$blockquote-padding:         0.5rem 0.5rem 1.5rem;// Padding for <blockquote>
+$blockquote-border-style:          0;             // Border style for <blockquote>
+$blockquote-sidebar-style:   4*$_1px solid #505050;// Style for the sidebar of <blockquote>
+$blockquote-border-radius:   0 2*$_1px 2*$_1px 0; // Border radius for <blockquote>
+$blockquote-box-shadow:       none;               // Box shadow for <blockquote>
+$blockquote-cite-font-size:  0.875rem;            // Font size for citation of <blockquote>
+$blockquote-cite-fore-color:       #505050;       // Text color for citation of <blockquote>
+$blockquote-cite-left-position:    0.625rem;      // Left padding for citation of <blockquote>
+$blockquote-cite-bottom-position:  0;             // Bottom padding for citation of <blockquote>
+$code-element-border-style:   0;                  // Border style for <code>
+$code-element-border-radius:  2*$_1px;            // Border radius for <code>
+$code-element-back-color:     #e6e6e6;            // Background color for <code>
+$code-element-fore-color:     $fore-color;        // Text color for <code>
+$code-element-padding:        0.125rem 0.25rem;   // Padding for <code>
+$code-element-box-shadow:     none;               // Box shadow for <code>
+$pre-element-border-style:    0;                  // Border style for <pre>
+$pre-element-border-radius:   0 2*$_1px 2*$_1px 0;// Border radius for <pre>
+$pre-element-back-color: $code-element-back-color;// Background color for <pre>
+$pre-element-fore-color: $code-element-fore-color;// Text color for <pre>
+$pre-element-padding:         0.75rem;            // Padding for <pre>
+$pre-element-margin:          0.5rem;             // Margin for <pre>
+$pre-element-box-shadow:      none;               // Box shadow for <pre>
+$kbd-element-border-style:    0;                  // Border style for <kbd>
+$kbd-element-border-radius: $code-element-border-radius;  // Border radius for <kbd>
+$kbd-element-back-color:      #0c0c0c;            // Background color for <kbd>
+$kbd-element-fore-color:      #fafafa;            // Text color for <kbd>
+$kbd-element-padding:     $code-element-padding;  // Padding for <kbd>
+$kbd-element-box-shadow: $code-element-box-shadow;// Box shadow for <kbd>
+$small-font-size:      0.75em;                    // Font size for <small> elements
+$sub-font-size:        0.75em;                    // Font size for <sub> elements
+$sup-font-size:        0.75em;                    // Font size for <sup> elements
+$sup-top:              -0.5em;                    // <sup> top
+$sub-bottom:           -0.25em;                   // <sub> bottom
+$link-fore-color:          #0277bd;               // Text color for <a>
+$link-font-weight:         500;                   // Font weight for <a>
+$link-visited-fore-color:  #01579b;               // Text color for visited <a>
+$figcaption-font-size:     0.8125rem;             // Font size of <figcaption> elements
+$figcaption-fore-color:    #424242;               // Text color for <figcaption> elements
+
+@import '../mini/core';
