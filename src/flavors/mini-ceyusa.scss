@@ -66,10 +66,50 @@ $link-visited-fore-color:  #01579b;               // Text color for visited <a>
 $figcaption-font-size:     0.8125rem;             // Font size of <figcaption> elements
 $figcaption-fore-color:    #424242;               // Text color for <figcaption> elements
 
+$header-height:            2.75rem;                // Height for <header>
+$header-back-color:        #12171a;                // Background color for <header>
+$header-fore-color:        #f5f5f5;                // Text color for <header>
+$header-border-style:      0;                      // Border style for <header>
+$header-margin:            0;                      // Margin for <header>
+$header-padding:           0.125rem 0.5rem;        // Padding for <header>
+$header-box-shadow:        none;                   // Box shadow for <header>
+$header-logo-font-size:    1.75rem;                // Font size for <header>'s logo
+$header-logo-line-height:  1.3125em;               // Line height for <header>'s logo
+$header-logo-margin:       0.0625rem 0.375rem 0.0625rem 0.0625rem;  // Margin for <header>'s logo
+$header-logo-padding:      0;                      // Padding for <header>'s logo
+$header-link-margin:       0.125rem 0;             // Margin for <header>'s links
+$header-link-hover-color:  #20292e;                // Hover color for <header>'s links
+$nav-back-color:           #eceff1;                // Background for <nav>
+$nav-fore-color:           $fore-color;            // Text color for <nav>
+$nav-border-style:         $_1px solid #c9c9c9;    // Border style for <nav>
+$nav-border-radius:        0;                      // Border radius for <nav>
+$nav-margin:               0.5rem;                 // Margin for <nav>
+$nav-padding:              0.75rem 1rem;           // Padding for <nav>
+$nav-box-shadow:           none;                   // Box shadow for <nav>
+$nav-link-fore-color:      #145caf;                // Text color for links in <nav>
+$footer-back-color:        #192024;                // Background color for <footer>
+$footer-fore-color:        #f5f5f5;                // Text color for <footer>
+$footer-border-style:      0;                      // Border stye for <footer>
+$footer-margin:            1rem 0 0;               // Margin for <footer>
+$footer-padding:           1.5rem 0.5rem 0.75rem;  // Padding for <footer>
+$footer-font-size:         0.875rem;               // Font size for <footer>
+$footer-link-fore-color:   #0288d1;                // Text color for links in <footer>
+$drawer-toggle-top:        0.4375rem;              // Top position for the drawer component's toggle icon
+$drawer-toggle-font-size:  2.5rem;                 // Font size for the drawer component's toggle icon
+$drawer-toggle-line-height:0.125;                  // Line height for the drawer component's toggle icon
+$drawer-back-color:        $nav-back-color;        // Background color of the drawer component
+$drawer-border-style:      $nav-border-style;      // Border style of the drawer component
+$drawer-border-radius:     0;                      // Border radius of the drawer component
+$drawer-padding:           0;                      // Padding of the drawer component
+$drawer-box-shadow:        none;                   // Box shadow for the drawer component
+$drawer-close-top:         0.75rem;                // Top position of the drawer component's close icon
+$drawer-close-right:       0.25rem;                // Right position of the drawer component's close icon
+
 $article-mobile-breakpoint:   767px !default;     // Breakpoint for table mobile view.
 $article-element-back-color:  white;              // Background color for <article>
 
 @import '../mini/core';
+@import '../mini/navigation';
 @import '../extra/html4css1';
 
 article {
