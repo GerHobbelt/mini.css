@@ -32,9 +32,9 @@ $blockquote-border-style:          0;             // Border style for <blockquot
 $blockquote-sidebar-style:   4*$_1px solid #505050;// Style for the sidebar of <blockquote>
 $blockquote-border-radius:   0 2*$_1px 2*$_1px 0; // Border radius for <blockquote>
 $blockquote-box-shadow:       none;               // Box shadow for <blockquote>
-$blockquote-cite-font-size:  0.875rem;            // Font size for citation of <blockquote>
-$blockquote-cite-fore-color:       #505050;       // Text color for citation of <blockquote>
-$blockquote-cite-left-position:    0.625rem;      // Left padding for citation of <blockquote>
+$blockquote-cite-font-size:        0;             // Font size for citation of <blockquote>
+$blockquote-cite-fore-color: $blockquote-fore-color;// Text color for citation of <blockquote>
+$blockquote-cite-left-position:    0;             // Left padding for citation of <blockquote>
 $blockquote-cite-bottom-position:  0;             // Bottom padding for citation of <blockquote>
 $code-element-border-style:   0;                  // Border style for <code>
 $code-element-border-radius:  2*$_1px;            // Border radius for <code>
