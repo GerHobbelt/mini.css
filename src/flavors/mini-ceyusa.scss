@@ -217,8 +217,28 @@ article {
     }
 }
 
+.pager {
+    @include article-body;
+
+    ul {
+	display: inline;
+	list-style: none;
+
+	.prev {
+	    float: left;
+	}
+	.next {
+	    float: right;
+	}
+
+	li {
+	    @include article-header-link;
+	}
+    }
+}
+
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
-    article, #index {
+    article, #index, .pager {
 	margin: 0 0 0 0;
     }
 }
