@@ -181,14 +181,20 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
     }
 }
 
-article {
-    @include article-body;
-
-    header a {
+@mixin article-header-link {
+    a {
 	text-decoration: none;
 	&:visited {
 	    color: brown;
 	}
+    }
+}
+
+article {
+    @include article-body;
+
+    header {
+	@include article-header-link;
     }
 
     footer ul {
