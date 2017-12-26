@@ -205,6 +205,12 @@ article {
 
 #index {
     @include article-body;
+
+    h3 {
+	border-top-style: dotted;
+	border-width: 1px;
+	width: 50%;
+    }
 }
 
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
