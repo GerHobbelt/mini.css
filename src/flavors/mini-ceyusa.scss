@@ -92,6 +92,7 @@ $include-drawer:           false;                  // [Hidden flag] Should the d
 
 $article-mobile-breakpoint:   767px !default;     // Breakpoint for table mobile view.
 $article-element-back-color:  white;              // Background color for <article>
+$content-margin:              0 10% 0 10%;        // Margin of the content
 
 $form-back-color:        $article-element-back-color;// Background color for forms
 $form-fore-color:        $fore-color;             // Text color for forms
@@ -154,7 +155,7 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
 @import '../extra/html4css1';
 
 @mixin article-body {
-    margin: 0 10% 0 10%;
+    margin: $content-margin;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background: $article-element-back-color;
     color: $fore-color;
@@ -261,7 +262,7 @@ aside {
 
 #idx {
     float: right;
-    margin: 0 10%;
+    margin: $content-margin;
 
     input[type="submit"] {
 	width: 30px;
@@ -276,6 +277,6 @@ aside {
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
     #idx {
 	float: none;
-	margin: 0 0;
+	margin: 0 0 0 0;
     }
 }
