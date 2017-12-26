@@ -237,8 +237,15 @@ article {
     }
 }
 
+section {
+    @include article-body($back-color);
+    li,a,time {
+	font-size: $footer-font-size;
+    }
+}
+
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
-    article, #index, .pager {
+    article, #index, .pager, section {
 	margin: 0 0 0 0;
     }
 }
