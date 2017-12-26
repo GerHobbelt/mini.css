@@ -157,54 +157,47 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
     margin: 0 10% 0 10%;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background: $article-element-back-color;
+    color: $fore-color;
 
     a {
 	color: brown;
+	font-size: inherit;
     }
-}
-
-article {
-    @include article-body;
 
     header {
 	background: $article-element-back-color;
 	color: $fore-color;
+    }
 
-	h2 {
-	    margin: 0 0;
-	}
-
-	a {
-	    font-size: inherit;
-	    text-decoration: none;
-	    &:visited {
-		color: brown;
-	    }
-	}
+    h2, h3 {
+	margin: 0 0;
     }
 
     footer {
         font-size: $footer-font-size;
 	margin: 0;
 	padding: 0 0.5rem 0.5rem;
+    }
+}
 
-	time {
-	    font-size: $footer-font-size;
+article {
+    @include article-body;
+
+    header a {
+	text-decoration: none;
+	&:visited {
+	    color: brown;
 	}
+    }
 
-	address a {
-	    font-size: $footer-font-size;
-	}
-
-	ul {
-	    margin: 0;
-	    padding: 0;
-	    list-style: none;
-	    li {
-		display: inline;
-		a {
-		    font-size: $footer-font-size;
-		}
+    footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+	    display: inline;
+	    a {
+		font-size: $footer-font-size;
 	    }
 	}
     }
@@ -212,15 +205,6 @@ article {
 
 #index {
     @include article-body;
-
-    header {
-	background: $article-element-back-color;
-	color: $fore-color;
-
-	h3 {
-	    margin: 0 0;
-	}
-    }
 }
 
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
