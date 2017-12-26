@@ -154,10 +154,10 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
 @import '../mini/input_control';
 @import '../extra/html4css1';
 
-@mixin article-body {
+@mixin article-body($body-back-color) {
     margin: $content-margin;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background: $article-element-back-color;
+    background: $body-back-color;
     color: $fore-color;
 
     a {
@@ -166,7 +166,7 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
     }
 
     header {
-	background: $article-element-back-color;
+	background: $body-back-color;
 	color: $fore-color;
     }
 
@@ -191,7 +191,7 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
 }
 
 article {
-    @include article-body;
+    @include article-body($article-element-back-color);
 
     header {
 	@include article-header-link;
@@ -208,7 +208,7 @@ article {
 }
 
 #index {
-    @include article-body;
+    @include article-body($article-element-back-color);
 
     h3 {
 	border-top-style: dotted;
@@ -218,7 +218,7 @@ article {
 }
 
 .pager {
-    @include article-body;
+    @include article-body($article-element-back-color);
 
     ul {
 	display: inline;
