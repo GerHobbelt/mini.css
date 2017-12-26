@@ -248,12 +248,6 @@ section {
     }
 }
 
-@media screen and (max-width: #{$article-mobile-breakpoint}) {
-    article, #index, .pager, section {
-	margin: 0 0 0 0;
-    }
-}
-
 #banner {
     background: $banner-back-color;
     border-radius: 5px;
@@ -287,12 +281,6 @@ aside {
     }
 }
 
-@media screen and (max-width: #{$article-mobile-breakpoint}) {
-    aside {
-	display: none;
-    }
-}
-
 #idx {
     float: right;
     margin: $content-margin;
@@ -308,6 +296,14 @@ aside {
 }
 
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
+    article, #index, .pager, section {
+	margin: 0 0 0 0;
+    }
+
+    aside {
+	display: none;
+    }
+
     #idx {
 	float: none;
 	margin: 0 0 0 0;
@@ -352,4 +348,11 @@ aside {
 .line-block .line {
     font-family: monospace;
     margin-left: 2rem;
+}
+
+/* youtube */
+.youtube {
+}
+
+.youtube-16x9 {
 }
