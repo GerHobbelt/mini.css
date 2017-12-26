@@ -193,6 +193,12 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
     }
 }
 
+@mixin article-footer {
+    a, time, address {
+	font-size: $footer-font-size;
+    }
+}
+
 article {
     @include article-body($article-element-back-color);
 
@@ -200,15 +206,21 @@ article {
 	@include article-header-link;
     }
 
-    footer ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	li {
-	    display: inline;
-	}
-	a:visited {
-	    color: brown;
+
+    footer {
+	@include article-footer;
+
+	ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    li {
+		font-size: $footer-font-size;
+		display: inline;
+	    }
+	    a:visited {
+		color: brown;
+	    }
 	}
     }
 }
@@ -220,6 +232,10 @@ article {
 	border-top-style: dotted;
 	border-width: 1px;
 	width: 50%;
+    }
+
+    footer {
+	@include article-footer;
     }
 }
 
@@ -245,9 +261,11 @@ article {
 
 section {
     @include article-body($back-color);
+
     li,a,time {
 	font-size: $footer-font-size;
     }
+
     em {
 	font-size: inherit;
     }
