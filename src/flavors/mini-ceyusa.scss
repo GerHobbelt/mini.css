@@ -157,6 +157,53 @@ article {
     margin: 0 10% 0 10%;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background: $article-element-back-color;
+
+    a {
+	color: brown;
+    }
+
+    header {
+	background: $article-element-back-color;
+	color: $fore-color;
+
+	h2 {
+	    margin: 0 0;
+	}
+
+	a {
+	    font-size: inherit;
+	    text-decoration: none;
+	    &:visited {
+		color: brown;
+	    }
+	}
+    }
+
+    footer {
+        font-size: 0.5rem;
+	margin: 0;
+	padding: 0 0.5rem 0.5rem;
+
+	time {
+	    font-size: $footer-font-size;
+	}
+
+	address a {
+	    font-size: $footer-font-size;
+	}
+
+	ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    li {
+		display: inline;
+		a {
+		    font-size: $footer-font-size;
+		}
+	    }
+	}
+    }
 }
 
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
