@@ -210,8 +210,21 @@ article {
     }
 }
 
+#index {
+    @include article-body;
+
+    header {
+	background: $article-element-back-color;
+	color: $fore-color;
+
+	h3 {
+	    margin: 0 0;
+	}
+    }
+}
+
 @media screen and (max-width: #{$article-mobile-breakpoint}) {
-    article {
+    article, #index {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
     }
