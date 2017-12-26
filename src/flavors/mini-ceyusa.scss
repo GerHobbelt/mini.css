@@ -21,9 +21,11 @@ $paragraph-margin:       0.5rem;                  // Margin for <p> elements
 $list-margin:            0.5rem;                  // Margin for <ol> and <ul> elements
 $list-left-padding:      1rem;                    // Left padding for <ol> and <ul> elements
 $bold-font-weight:       700;                     // Font weight for <b> and <strong>
+$horizontal-rule-fancy-style:  true;              // Should a fancy styling be applied for the <hr> element (`true`/`false`).
 $horizontal-rule-line-height:  1.25em;            // <hr> line height
-$horizontal-rule-margin:       0.5rem;            // <hr> margin
+$horizontal-rule-margin:       0.5rem auto;       // <hr> margin
 $horizontal-rule-border-style: $_1px solid #8c8c8c;// Border style for horizontal rules (used in the <hr> element's border-top)
+$horizontal-rule-fancy-gradient:"to right, #bdbdbd, #8c8c8c, #bdbdbd";          // Gradient style for fancy horizontal rule
 $blockquote-back-color:      #eeeeee;             // Background color for <blockquote>
 $blockquote-fore-color:      $fore-color;         // Text color for <blockquote>
 $blockquote-margin:          0.5rem;              // Margin for <blockquote>
