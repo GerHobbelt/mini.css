@@ -246,6 +246,9 @@ section {
     li,a,time {
 	font-size: $footer-font-size;
     }
+    em {
+	font-size: inherit;
+    }
 }
 
 #banner {
