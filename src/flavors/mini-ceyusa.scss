@@ -96,7 +96,7 @@ $article-mobile-breakpoint:   767px !default;     // Breakpoint for table mobile
 $article-element-back-color:  white;              // Background color for <article>
 $content-margin:              0 10% 0 10%;        // Margin of the content
 
-$form-back-color:        $article-element-back-color;// Background color for forms
+$form-back-color:        $back-color;             // Background color for forms
 $form-fore-color:        $fore-color;             // Text color for forms
 $form-border-style:      0;                       // Border style for forms
 $form-border-radius:     0;                       // Border radius for forms
@@ -307,6 +307,7 @@ aside {
 #idx {
     float: right;
     margin: $content-margin;
+    background: $article-element-back-color;
 
     input[type="submit"] {
 	width: 30px;
