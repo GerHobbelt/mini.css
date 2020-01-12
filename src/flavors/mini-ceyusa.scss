@@ -5,10 +5,6 @@
     src: local('Roboto'),local('Roboto-Regular'),url(Roboto-Regular.ttf) format('truetype');
 }
 
-html, * {
-    text-rendering: optimizeLegibility;
-}
-
 $base-root-font-size:   18px;                     // Root font sizing for all elements [1]
 $_1px:  (1px/$base-root-font-size) * 1rem;        // Calculated rem value of 1px [1]
 $base-font-family:                                // Default font stack for all elements:
@@ -161,6 +157,12 @@ $apply-select-fix:               false;           // [Hidden flag] Should the st
 
 $banner-back-color:           #ffaa00;            // Background color for <header>#banner
 $banner-fore-color:           #000000;            // Text color for <header>#banner
+
+@import '../extra/normalize';
+
+html, * {
+    text-rendering: optimizeLegibility;
+}
 
 @import '../mini/core';
 @import '../mini/navigation';
