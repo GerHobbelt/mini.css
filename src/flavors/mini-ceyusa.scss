@@ -175,6 +175,7 @@ html, * {
     padding: 0.5rem 1rem 0.5rem 1rem;
     background: $body-back-color;
     color: $fore-color;
+    word-wrap: break-word;
 
     a {
 	color: brown;
