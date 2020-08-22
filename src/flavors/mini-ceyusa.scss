@@ -5,7 +5,7 @@
     src: local('Roboto'),local('Roboto-Regular'),url(Roboto-Regular.ttf) format('truetype');
 }
 
-$base-root-font-size:   18px;                     // Root font sizing for all elements [1]
+$base-root-font-size:   21px;                     // Root font sizing for all elements [1]
 $_1px:  (1px/$base-root-font-size) * 1rem;        // Calculated rem value of 1px [1]
 $base-font-family:                                // Default font stack for all elements:
   '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
@@ -24,10 +24,10 @@ $h3-font-size:          1.4375rem;                // Font size for h3
 $h4-font-size:          1.1875rem;                // Font size for h4
 $h5-font-size:          1rem;                     // Font size for h5
 $h6-font-size:          0.8125rem;                // Font size for h6
-$paragraph-margin:       0.5rem;                  // Margin for <p> elements
-$list-margin:            0.5rem;                  // Margin for <ol> and <ul> elements
-$list-left-padding:      1rem;                    // Left padding for <ol> and <ul> elements
-$bold-font-weight:       700;                     // Font weight for <b> and <strong>
+$paragraph-margin:      0.5rem;                   // Margin for <p> elements
+$list-margin:           0.5rem;                   // Margin for <ol> and <ul> elements
+$list-left-padding:     1rem;                     // Left padding for <ol> and <ul> elements
+$bold-font-weight:      700;                      // Font weight for <b> and <strong>
 $horizontal-rule-fancy-style:  true;              // Should a fancy styling be applied for the <hr> element (`true`/`false`).
 $horizontal-rule-line-height:  1.25em;            // <hr> line height
 $horizontal-rule-margin:       0.5rem auto;       // <hr> margin
@@ -162,6 +162,7 @@ $banner-fore-color:           #000000;            // Text color for <header>#ban
 
 html, * {
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 @import '../mini/core';
@@ -176,6 +177,15 @@ html, * {
     background: $body-back-color;
     color: $fore-color;
     word-wrap: break-word;
+    letter-spacing: -0.03px;
+
+    p {
+	display: block;
+	margin-block: 1em 1em;
+	margin-inline: 0px 0px;
+
+	margin: 2em 0 0 -0.46em;
+    }
 
     a {
 	color: brown;
