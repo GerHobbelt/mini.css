@@ -181,10 +181,21 @@ html, * {
 
     p {
 	display: block;
-	margin-block: 1em 1em;
-	margin-inline: 0px 0px;
-
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
 	margin: 2em 0 0 -0.46em;
+    }
+
+    p.caption {
+	margin: 0 2em 0 2em;
+	font-size: $figcaption-font-size;
+	color: $figcaption-fore-color;
+    }
+
+    .figure img {
+	margin: 1em 0 0 0;
     }
 
     a {
@@ -388,11 +399,6 @@ aside {
 	font-size: 1em;
 	line-height: 3;
     }
-}
-
-/* for pages, only 70ch width */
-#content {
-    max-width: 70ch;
 }
 
 /* poetry */
