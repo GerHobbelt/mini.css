@@ -1085,7 +1085,7 @@ header .logo {
   text-decoration: none;
 }
 
-header button, header [type="button"], header .button, header [role="button"] {
+header span, header button, header [type="button"], header .button, header [role="button"] {
   box-sizing: border-box;
   position: relative;
   top: calc(0rem - var(--universal-padding) / 4);
